@@ -118,12 +118,12 @@
     justify-content: flex-end;
 }
 #menu {
-    height: 40px;
+    font-size: var(--font-md);
 }
 #closemenu{
     padding: 0 10px;
     color: rgb(98, 96, 96);
-    height: 40px;
+    font-size: var(--font-md);
 }
 .navbar__btns {
     display: flex;
