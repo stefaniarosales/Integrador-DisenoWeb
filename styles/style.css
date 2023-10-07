@@ -117,9 +117,13 @@
     display: flex;
     justify-content: flex-end;
 }
+#menu {
+    height: 40px;
+}
 #closemenu{
     padding: 0 10px;
     color: rgb(98, 96, 96);
+    height: 40px;
 }
 .navbar__btns {
     display: flex;
