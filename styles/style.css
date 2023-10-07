@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'open sans';
+    /* outline: 1px solid rgb(24, 46, 187); */
+}
+:root {
+     /* bg-colors */
+    --background: #93390D;
+    --btn-bg: #B54408;
+
+    /* Text-colors */
+    --text-white: #f6f8fb;
+    --text-black: #060606e3;
+    --text-bg:#B54408; 
+
+     /* Fonts */
+    --font-opensans: "Open Sans";
+    --font-regular: 400;
+    --font-mediun: 500;
+    --font-semibold: 600;
+    --font-bold: 700;
+
+    --font-sm: 16px;
+    --font-sd: 24px;
+    --font-md: 32px;
+    --font-xl: 40px;
+}
+/* ==================== BUTTON reutilizables ==================== */
+.btn {
+    background: var(--btn-bg);
+    padding: 8px;
+    border-radius: 35px;
+    width: 150px;
+    text-align: center;
+    font-weight: var(--font-semibold);
+    font-size: var(--font-sm);
+    color: var(--text-white);
+    letter-spacing: 2px;
+}
+
+/* ==================== HEADER ==================== */
+.header {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+
+    position: fixed;
+    width: 100%;
+}
+.header__logo {
+    width: 100px;
+    height: 40px;
+}
+
+/* ==================== NAVBAR ==================== */
+.navbar {
+    display: flex;
+}
+
+.navbar__menu {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: absolute;
+    height: calc(100vh - 80px);
+    top: 80px;
+    right: 0;
+    border-left: 0.5px solid var(--btn-bg);
+    transform: translateX(100%);
+    transition: all 0.4s ease;
+    z-index: 2;
+    background: rgb(255, 255, 255);
+}
+.navbar__items {
+    width: 150px;
+    font-weight: var(--font-semibold);
+    font-size: var(--font-sm);
+    color: var(--btn-bg);
+    letter-spacing: 2px;
+    /* border-top: 0.5px solid var(--btn-bg); */
+    border-bottom: 0.5px solid var(--btn-bg);
+    padding: 8px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.navbar__links {
+    color: var(--btn-bg);
+}
+
+#toggle__menu {
+    display: none;
+}
+#toggle__menu:checked ~ .navbar__menu {
+    transform: translateX(0);
+}
+
+.navbar__btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+/* ==================== BUTTON ==================== */
+.navbar__btn {
+    background: var(--btn-bg);
+    padding: 8px;
+    border-radius: 35px;
+    width: 150px;
+    text-align: center;
+    font-weight: var(--font-semibold);
+    font-size: var(--font-sm);
+    color: var(--text-white);
+    letter-spacing: 2px;
+}
+/* .header__btn:hover{
+    opacity: 0.50;
+    -moz-opacity: .50;
+    filter:alpha (opacity=50);
+} */
+
+/* ==================== SECTION HERO ==================== */
+
+.hero {
+    /* min-width: 100%;
+    min-height: 50vh; */
+    padding-top: 80px;
+    /* background-image: url(/assets/images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 80px;
+    background-size: 100%; */
+}
+.hero__img {
+    width: 100%;
+    object-fit: cover;
+}
+.hero__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+
+}
+.hero__h1 {
+    padding-top: 20px;
+    font-size: var(--font-md);
+    font-weight: var(--font-bold);
+    text-align: center;
+
+}
+.hero__p {
+    font-size: var(--font-sm);
+    text-align: center;
+}
+button {
+    all: unset;
+}
+
