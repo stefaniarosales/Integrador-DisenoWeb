@@ -12,6 +12,7 @@
 :root {
      /* bg-colors */
     --background: #93390D;
+    --background-secondary: rgb(183, 179, 179);
     --btn-bg: #B54408;
     --btn-secondary: #D26804;
 
@@ -58,6 +59,15 @@
     color: var(--text-bg);
     letter-spacing: 2px;
 }
+span {
+    background: rgb(70,23,2);
+    background: linear-gradient(90deg, rgb(97, 41, 15) 18%, rgba(181,68,8,1) 87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: var(--font-xl);
+    font-weight: var(--font-bold);
+}
 
 /* ==================== REUTILIZABLES ==================== */
 
@@ -68,8 +78,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px;
-    backdrop-filter: blur(7px);
-    background: rgba(255, 255, 255, 0.727);
+    background: rgba(255, 255, 255, 0.905);
 
     position: fixed;
     width: 100%;
@@ -101,8 +110,6 @@
 
     backdrop-filter: blur(7px);
     background: rgba(255, 255, 255, 0.727);
-    /* ???????? */
-    z-index: 3;
 }
 .navbar__items {
     width: 150px;
@@ -207,6 +214,7 @@ button {
 /* ==================== SECTION ABOUT ==================== */
 #about {
     width: 100%;
+    background: var(--background-secondary);
 }
 .about__container {
     display: flex;
@@ -214,9 +222,10 @@ button {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 1rem;
 }
 #about h1 {
-    padding-bottom: 2rem;
+    padding-top: 2rem;
     text-align: center;
     font-size: var(--font-l);
     font-weight: var(--font-bold);
@@ -225,9 +234,9 @@ button {
 .about__info {
     width: 300px;
     height:  300px;
-    background: rgb(255,250,235);
+    /* background: rgb(255,250,235); */
     border-radius: 25px;
-    background: linear-gradient(0deg, rgba(255,250,235,1) 10%, rgba(230,167,104,1) 70%, rgba(210,104,4,1) 100%);
+    /* background: linear-gradient(0deg, rgba(255,250,235,1) 10%, rgba(230,167,104,1) 70%, rgba(210,104,4,1) 100%); */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -236,8 +245,8 @@ button {
 .info__title {
     padding: 1rem;
     font-size: var(--font-s);
+    font-weight: var(--font-mediun);
     text-align: center;
-    border-radius: 20px 20px 0 0 ;
 }
 .info__p {
     padding: 1rem;
@@ -250,5 +259,76 @@ button {
     width:100%;
     text-align: center;
 } 
+
+/* ==================== SECTION CARDS ==================== */
+#cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+.cards__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 10px;
+}
+.cards__info--title {
+    font-size: var(--font-l);
+    font-weight: var(--font-bold);
+}
+.cards__info--p {
+    font-size: var(--font-s);
+    font-weight: var(--font-regular);
+    color: var(--text-p);
+}
+.cards__container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 393px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #534b4b;
+    border-radius: 25px;
+}
+.card__img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+.card__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.card__info--title {
+    font-size: var(--font-l);
+    font-weight: var(--font-bold);
+    letter-spacing: 2px;
+    color: var(--text-bg);
+}
+.card__info--p {
+    font-size: var(--font-s);
+    font-weight: var(--font-regular);
+    color: var(--text-p);
+}
+.card__btn {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 
