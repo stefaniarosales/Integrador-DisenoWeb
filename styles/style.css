@@ -46,7 +46,7 @@
     font-weight: var(--font-semibold);
     font-size: var(--font-sm);
     color: var(--text-white);
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 .btn__secondary {
     outline: 1px solid var(--btn-secondary);
@@ -57,7 +57,7 @@
     font-weight: var(--font-semibold);
     font-size: var(--font-sm);
     color: var(--text-bg);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 span {
     background: rgb(70,23,2);
@@ -236,10 +236,11 @@ button {
     height:  300px;
     /* background: rgb(255,250,235); */
     border-radius: 25px;
-    /* background: linear-gradient(0deg, rgba(255,250,235,1) 10%, rgba(230,167,104,1) 70%, rgba(210,104,4,1) 100%); */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     
 }
 .info__title {
