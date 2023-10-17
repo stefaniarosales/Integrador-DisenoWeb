@@ -13,6 +13,7 @@
      /* bg-colors */
     --background: #93390D;
     --btn-bg: #B54408;
+    --btn-secondary: #D26804;
 
     /* Text-colors */
     --text-white: #f6f8fb;
@@ -46,6 +47,17 @@
     color: var(--text-white);
     letter-spacing: 2px;
 }
+.btn__secondary {
+    outline: 1px solid var(--btn-secondary);
+    padding: 8px;
+    border-radius: 35px;
+    width: 150px;
+    text-align: center;
+    font-weight: var(--font-semibold);
+    font-size: var(--font-sm);
+    color: var(--text-bg);
+    letter-spacing: 2px;
+}
 
 /* ==================== REUTILIZABLES ==================== */
 
@@ -56,6 +68,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px;
+    backdrop-filter: blur(7px);
+    background: rgba(255, 255, 255, 0.727);
 
     position: fixed;
     width: 100%;
@@ -63,7 +77,6 @@
 .header__logo {
     width: 110px;
     height: 40px;
-    color: aliceblue;
 }
 
 /* ==================== NAVBAR ==================== */
@@ -85,8 +98,11 @@
     border-left: 0.5px solid var(--btn-bg);
     transform: translateX(200%);
     transition: all 0.4s ease;
+
     backdrop-filter: blur(7px);
     background: rgba(255, 255, 255, 0.727);
+    /* ???????? */
+    z-index: 3;
 }
 .navbar__items {
     width: 150px;
@@ -159,8 +175,10 @@ main {
 /* ==================== SECTION HERO ==================== */
 .hero__img {
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     object-fit: cover;
+    padding-top: 80px;
+    
 }
 .hero__info {
     display: flex;
@@ -181,6 +199,7 @@ main {
     text-align: center;
     color: var(--text-p);
 }
+/* ?????????????' */
 button {
     all: unset;
 }
@@ -188,13 +207,17 @@ button {
 /* ==================== SECTION ABOUT ==================== */
 #about {
     width: 100%;
+}
+.about__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 20px;
 }
-.about__h1 {
+#about h1 {
+    padding-bottom: 2rem;
+    text-align: center;
     font-size: var(--font-l);
     font-weight: var(--font-bold);
 }
@@ -207,7 +230,8 @@ button {
     background: linear-gradient(0deg, rgba(255,250,235,1) 10%, rgba(230,167,104,1) 70%, rgba(210,104,4,1) 100%);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    
 }
 .info__title {
     padding: 1rem;
@@ -222,5 +246,9 @@ button {
     text-align: center;
     color: var(--text-p);
 }
+.info__btn {
+    width:100%;
+    text-align: center;
+} 
 
 
