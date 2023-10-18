@@ -12,7 +12,7 @@
 :root {
      /* bg-colors */
     --background: #93390D;
-    --background-secondary: rgb(183, 179, 179);
+    --background-secondary:rgb(233, 229, 229);;
     --btn-bg: #B54408;
     --btn-secondary: #D26804;
 
@@ -78,7 +78,7 @@ span {
     justify-content: space-between;
     align-items: center;
     padding: 0px 10px;
-    background: rgba(255, 255, 255, 0.905);
+    background: rgba(255, 255, 255, 0.966);
 
     position: fixed;
     width: 100%;
@@ -239,18 +239,15 @@ button {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    
 }
 .info__title {
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: var(--font-s);
     font-weight: var(--font-mediun);
     text-align: center;
 }
 .info__p {
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: var(--font-s);
     font-weight: var(--font-regular);
     text-align: center;
@@ -259,6 +256,11 @@ button {
 .info__btn {
     width:100%;
     text-align: center;
+}
+.about__info--img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
 } 
 
 /* ==================== SECTION CARDS ==================== */
@@ -331,5 +333,68 @@ button {
     flex-direction: column;
     gap: 1rem;
 }
+
+/* ==================== SECTION CONTACT ==================== */
+#contact {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+#contact p {
+    text-align: center;
+}
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    gap: 20px;
+}
+.contact__info--container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.info__telef {
+    display: flex;
+    gap: 10px;
+}
+.info__mail {
+    display: flex;
+    gap: 10px;
+}
+.info__ubic {
+    display: flex;
+    gap: 10px;
+}
+.contact__redes {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 18px;
+}
+
+/* form */
+form {
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+}
+Fieldset {
+    border: none;
+}
+label {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.label__1 {
+    padding: 10px 0px;
+}
+/* form */
 
 
