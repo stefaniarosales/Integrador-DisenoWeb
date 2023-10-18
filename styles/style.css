@@ -29,6 +29,7 @@
     --font-semibold: 600;
     --font-bold: 700;
 
+    --font-xs: 10px
     --font-s: 16px;
     --font-m: 24px;
     --font-l: 32px;
@@ -380,7 +381,7 @@ button {
 
 /* form */
 form {
-    width: 290px;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -397,4 +398,25 @@ label {
 }
 /* form */
 
+/* maps */
+.contact__map {
+    width: auto;
+}
+.contact__map iframe {
+    width: 100%;
+}
+/* maps */
 
+/* ==================== FOOTER ==================== */
+footer {
+    background: var(--background);
+    text-align: center;
+}
+.footer__logo {
+    width: 110px;
+    height: 40px;
+}
+footer p {
+    font-size: 8px;
+    font-weight: var(--font-regular);
+}
