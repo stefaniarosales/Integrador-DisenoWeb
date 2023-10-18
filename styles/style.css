@@ -11,7 +11,7 @@
 }
 :root {
      /* bg-colors */
-    --background: #93390D;
+    --background: #b54a08;
     --background-secondary:rgb(233, 229, 229);;
     --btn-bg: #B54408;
     --btn-secondary: #D26804;
@@ -279,6 +279,7 @@ button {
     text-align: center;
     gap: 20px;
     padding: 10px;
+    background: var(--background);
 }
 .cards__info--title {
     font-size: var(--font-l);
@@ -344,8 +345,15 @@ button {
     gap: 10px;
     padding: 10px;
 }
+.contact__title {
+    font-size: var(--font-l);
+    font-weight: var(--font-bold);
+}
 #contact p {
     text-align: center;
+    font-size: var(--font-s);
+    font-weight: var(--font-regular);
+    color: var(--text-p);
 }
 .contact__container {
     display: flex;
@@ -384,6 +392,9 @@ form {
     width: 100%;
     display: flex;
     flex-direction: column;
+    font-size: var(--font-s);
+    font-weight: var(--font-regular);
+    color: var(--text-p);
 }
 Fieldset {
     border: none;
