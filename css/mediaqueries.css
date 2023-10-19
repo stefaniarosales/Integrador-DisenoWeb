@@ -1,7 +1,18 @@
 /* ==================== TABLET ==================== */
 @media (min-width: 610px) {
+
+    /* hero */
+    .hero__h1 {
+        font-size: var(--font-xl);
+    }
+    .hero__p {
+        font-size: var(--font-m);
+    }
+
+    /* about */
     #about h1 {
         font-size: var(--font-xl);
+        padding-bottom: 20px;
     }
     .about__container {
         width: 100%;
@@ -21,5 +32,25 @@
     }
     .reverse {
         flex-direction: row-reverse;
-}
+    }
+
+    /* cards */
+    .cards__info--title {
+        font-size: var(--font-xl);
+    }
+    .cards__info--p {
+        font-size: var(--font-m);
+    }
+    .card {
+        width: 350px;
+        height: 450px;
+    }
+    .card__img {
+        width: 310px;
+        height: 250px;
+    }
+    .btn--card {
+        width: 300px;
+        padding: 12px;
+    }
 }
