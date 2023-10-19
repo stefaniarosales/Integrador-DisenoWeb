@@ -29,7 +29,7 @@
     --font-semibold: 600;
     --font-bold: 700;
 
-    --font-xs: 10px
+    --font-xs: 10px;
     --font-s: 16px;
     --font-m: 24px;
     --font-l: 32px;
@@ -131,9 +131,7 @@ span {
     display: none;
 }
 /* ==================== PSEUDOCLASES ==================== */
-#toggle__closemenu:checked ~ .navbar__menu{
-    transform: translateX(-10rem);
-}
+
 #toggle__menu:checked ~ .navbar__menu {
     transform: translateX(0);
     
@@ -148,9 +146,11 @@ span {
     color: rgb(98, 96, 96);
 }
 #closemenu{
-    padding: 0 10px;
+    padding: 10px;
     color: rgb(98, 96, 96);
     font-size: var(--font-md);
+    width: 35px;
+    align-self: flex-end;
 }
 
 
@@ -180,8 +180,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    max-width: 1200px;
+    gap: 50px;
 }
 /* ==================== SECTION HERO ==================== */
 
@@ -218,7 +217,8 @@ button {
 /* ==================== SECTION ABOUT ==================== */
 #about {
     width: 100%;
-    background: var(--background-secondary);
+    /* background: var(--background-secondary); */
+    max-width: 1200px;
 }
 .about__container {
     width: 100%;
@@ -242,6 +242,7 @@ button {
     justify-content: space-evenly;
     gap: 15px;
     padding-bottom: 10px;
+    /* background: #b3cae3d5; */
 }
 .info__title {
     padding: 0.9rem;
@@ -273,6 +274,7 @@ button {
     align-items: center;
     gap: 30px;
     width: 100%;
+    max-width: 1200px;
 }
 .cards__info {
     display: flex;
@@ -351,12 +353,13 @@ button {
     align-items: center;
     gap: 10px;
     padding: 10px;
+    max-width: 1200px;
 }
 .contact__title {
     font-size: var(--font-l);
     font-weight: var(--font-bold);
 }
-#contact p {
+.contact__p {
     text-align: center;
     font-size: var(--font-s);
     font-weight: var(--font-regular);
@@ -407,10 +410,12 @@ form {
 Fieldset {
     border: none;
 }
+
 label {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    
 }
 .label__1 {
     padding: 10px 0px;
@@ -418,11 +423,12 @@ label {
 /* form */
 
 /* maps */
-.contact__map {
-    width: auto;
-}
-.contact__map iframe {
+iframe {
+    height: 300px;
     width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
 }
 /* maps */
 
