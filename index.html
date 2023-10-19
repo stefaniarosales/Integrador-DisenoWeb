@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=K, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaqueries.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>Kyra</title>
 </head>
 <body>
     <!-- ==================== HEADER ==================== -->
     <header class="header">
-        <img class="header__logo" src="./assets/images/Kyra_logo.png" alt="logo">
+        <img class="header__logo" src="./assets/img/logo.png" alt="logo">
         <div class="header__nav">
             <nav class="navbar">
                 <label for="toggle__menu"><i class="fa-solid fa-bars" id="menu"></i></label>
@@ -32,10 +33,10 @@
     <!-- ==================== MAIN ==================== -->
     <main>
         <!-- ==================== SECTION HERO ==================== -->
-        <section class="hero">
-            <img class="hero__img" src="./assets/images/hero.jpg" alt="perro">
+        <section id="hero">
+            <img class="hero__img" src="./assets/img/hero.jpg" alt="perro">
             <div class="hero__info">
-                <h1 class="hero__h1"><span>Adoptá</span>, no compres.</h1>
+                <h1 class="hero__h1"><span>Adopta</span>, no compres.</h1>
                 <p class="hero__p">Soñamos y luchamos por un mundo sin perros en la calle.</p>
             </div>
         </section>
@@ -43,89 +44,101 @@
         <section id="about">
             <h1>Cuidados básicos</h1>
             <div class="about__container">
-                <!-- ==================== ABOUT-INFO-1 ==================== -->    
-                <div class="about__info">
-                    <div class="info__title">
-                        <h2>¿Qué es el microchip?</h2>
+                <div class="about__container--caja">
+                    <!-- ==================== ABOUT-INFO-1 ==================== -->    
+                    <div class="about__info">
+                        <div class="info__title">
+                            <h2>¿Qué es el microchip?</h2>
+                        </div>
+                        <div class="info__p">
+                            <p>Un microchip es un pequeño dispositivo que se implanta en perros y gatos para mantenerlos identificados...</p>
+                        </div>
+                        <div class="info__btn">
+                            <button class="btn__secondary">Leer más</button>
+                        </div>
                     </div>
-                    <div class="info__p">
-                        <p>Un microchip es un pequeño dispositivo que se implanta en perros y gatos para mantenerlos identificados...</p>
-                    </div>
-                    <div class="info__btn">
-                        <button class="btn__secondary">Leer más</button>
-                    </div>
+                    <img class="about__info--img" src="./assets/img/img_about/microchip.jpg" alt="microchip">
                 </div>
-                <img class="about__info--img" src="./assets/images/microchip.jpg" alt="microchip">
 
-                <!-- ==================== ABOUT-INFO-2 ==================== --> 
-                <div class="about__info">    
-                    <div class="info__title">
-                        <h2>¿Qué vacunas debe tener mi adoptado?</h2>
+                <!-- ==================== ABOUT-INFO-2 ==================== -->
+                <div class="about__container--caja reverse">
+                    <div class="about__info">    
+                        <div class="info__title">
+                            <h2>¿Qué vacunas debe tener mi adoptado?</h2>
+                        </div>
+                        <div class="info__p">
+                            <p>Sabemos que, con la euforia de adoptar una mascota muchas cosas se nos pueden pasar por alto y aun más si no tenemos experiencia..</p>
+                        </div>
+                        <div class="info__btn">
+                            <button class="btn__secondary">Leer más</button>
+                        </div>
                     </div>
-                    <div class="info__p">
-                        <p>Sabemos que, con la euforia de adoptar una mascota muchas cosas se nos pueden pasar por alto y aun más si no tenemos experiencia..</p>
-                    </div>
-                    <div class="info__btn">
-                        <button class="btn__secondary">Leer más</button>
-                    </div>
+                    <img class="about__info--img" src="./assets/img/img_about/vacunas-para-perros.jpg" alt="vacunas">
                 </div>
-                <img class="about__info--img" src="./assets/images/vacunas-para-perros.jpg" alt="vacunas">
 
                 <!-- ==================== ABOUT-INFO-3 ==================== -->
-                <div class="about__info">
-                    <div class="info__title">
-                        <h2> Tips para entrenar a tu cachoro a ir al baño</h2>
+                <div class="about__container--caja" >
+                    <div class="about__info">
+                        <div class="info__title">
+                            <h2> Tips para entrenar a tu cachoro a ir al baño</h2>
+                        </div>
+                        <div class="info__p">
+                            <p>Sabemos que una de las misiones más difíciles, al momento de adoptar un cachorro es, enseñarlo...   </p>
+                        </div>
+                        <div class="info__btn">
+                            <button class="btn__secondary">Leer más</button>
+                        </div>
                     </div>
-                    <div class="info__p">
-                        <p>Sabemos que una de las misiones más difíciles, al momento de adoptar un cachorro es, enseñarlo...   </p>
-                    </div>
-                    <div class="info__btn">
-                        <button class="btn__secondary">Leer más</button>
-                    </div>
+                    <img class="about__info--img" src="./assets/img/img_about/tips_baño.avif" alt="tips_baño">
                 </div>
-                <img class="about__info--img" src="./assets/images/tips_baño.avif" alt="tips_baño">
 
                 <!-- ==================== ABOUT-INFO-4 ==================== -->
-                <div class="about__info">
-                    <div class="info__title">
-                        <h2>Consejos para primer día en casa</h2>
+                <div class="about__container--caja reverse">
+                    <div class="about__info">
+                        <div class="info__title">
+                            <h2>Consejos para primer día en casa</h2>
+                        </div>
+                        <div class="info__p">
+                            <p>Muchas personas por la alegría de lo que representa adoptar una mascota, no tienen en cuenta lo que pasará...</p>
+                        </div>
+                        <div class="info__btn">
+                            <button class="btn__secondary">Leer más</button>
+                        </div>
                     </div>
-                    <div class="info__p">
-                        <p>Muchas personas por la alegría de lo que representa adoptar una mascota, no tienen en cuenta lo que pasará...</p>
-                    </div>
-                    <div class="info__btn">
-                        <button class="btn__secondary">Leer más</button>
-                    </div>
+                    <img class="about__info--img" src="./assets/img/img_about/pimer_dia_casa.jpg">
                 </div>
-                <img class="about__info--img" src="./assets/images/pimer_dia_casa.jpg" alt="dog">
 
                 <!-- ==================== ABOUT-INFO-5 ==================== -->
-                <div class="about__info">
-                    <div class="info__title">
-                        <h2>Elementos peligrosos para tu adoptado</h2>
+                <div class="about__container--caja">
+                    <div class="about__info">
+                        <div class="info__title">
+                            <h2>Elementos peligrosos para tu adoptado</h2>
+                        </div>
+                        <div class="info__p">
+                            <p>La responsabilidad de cuidar a nuestras mascotas es un trabajo 24/7 que amerita la misma calidad y atención...</p>
+                        </div>
+                        <div class="info__btn">
+                            <button class="btn__secondary">Leer más</button>
+                        </div>
                     </div>
-                    <div class="info__p">
-                        <p>La responsabilidad de cuidar a nuestras mascotas es un trabajo 24/7 que amerita la misma calidad y atención...</p>
-                    </div>
-                    <div class="info__btn">
-                        <button class="btn__secondary">Leer más</button>
-                    </div>
+                    <img class="about__info--img" src="./assets/img/img_about/elementos_peligrosos.jpg">
                 </div>
-                <img class="about__info--img" src="./assets/images/elementos_peligrosos.jpg" alt="dog">
 
                 <!-- ==================== ABOUT-INFO-6 ==================== -->
-                <div class="about__info">
-                    <div class="info__title">
-                        <h2>Tips para encontrar el veterinario correcto</h2>
+                <div class="about__container--caja reverse">
+                    <div class="about__info">
+                        <div class="info__title">
+                            <h2>Tips para encontrar el veterinario correcto</h2>
+                        </div>
+                        <div class="info__p">
+                            <p>Elegir el mejor veterinario para nuestra mascota en ocasiones no es tarea fácil debido a que es una decisión...</p>
+                        </div>
+                        <div class="info__btn">
+                            <button class="btn__secondary">Leer más</button>
+                        </div>
                     </div>
-                    <div class="info__p">
-                        <p>Elegir el mejor veterinario para nuestra mascota en ocasiones no es tarea fácil debido a que es una decisión...</p>
-                    </div>
-                    <div class="info__btn">
-                        <button class="btn__secondary">Leer más</button>
-                    </div>
+                    <img class="about__info--img" src="./assets/img/img_about/veterinario.jpg" alt="veterinario">
                 </div>
-                <img class="about__info--img" src="./assets/images/veterinario.jpg" alt="veterinario">
             </div>
         </section>
         <!-- ==================== SECTION CARDS ==================== -->
@@ -139,97 +152,97 @@
             <div class="cards__container">
                 <!-- ==================== CARD #1 ==================== -->    
                 <div class="card">
-                    <img class="card__img" src="./assets/images/dog1.avif" alt="dog">
+                    <img class="card__img" src="./assets/img/img_cards/dog1.avif" alt="dog">
                     <div class="card__info">
                         <h2 class="card__info--title">OLIVIA</h2>
                         <p class="card__info--p">Independiente</p>
                         <div class="card__btn">
-                            <button class="btn">Adoptar</button>
-                            <button class="btn__secondary">Ver más info</button>
+                            <button class="btn btn--card">ADOPTAR</button>
+                            <button class="btn__secondary btn--card">Ver más info</button>
                         </div>
                     </div>
                 </div>
                 <!-- ==================== CARD #2 ==================== -->  
                 <div class="card">
-                    <img class="card__img" src="./assets/images/dog2.avif" alt="dog">
+                    <img class="card__img" src="./assets/img/img_cards/dog2.avif" alt="dog">
                     <div class="card__info">
                         <h2 class="card__info--title">SASHA</h2>
                         <p class="card__info--p">Exploradora</p>
                         <div class="card__btn">
-                            <button class="btn">Adoptar</button>
-                            <button class="btn__secondary">Ver más info</button>
+                            <button class="btn btn--card">ADOPTAR</button>
+                            <button class="btn__secondary btn--card">Ver más info</button>
                         </div>
                     </div>
                 </div>
                 <!-- ==================== CARD #3 ==================== --> 
                 <div class="card">
-                    <img class="card__img" src="./assets/images/dog3.avif" alt="dog">
+                    <img class="card__img" src="./assets/img/img_cards/dog3.avif" alt="dog">
                     <div class="card__info">
                         <h2 class="card__info--title">PEDRO</h2>
                         <p class="card__info--p">Jueguetón</p>
                         <div class="card__btn">
-                            <button class="btn">Adoptar</button>
-                            <button class="btn__secondary">Ver más info</button>
+                            <button class="btn btn--card">ADOPTAR</button>
+                            <button class="btn__secondary btn--card">Ver más info</button>
                         </div>
                     </div>
                 </div>
                 <!-- ==================== CARD #4 ==================== --> 
                 <div class="card">
-                    <img class="card__img" src="./assets/images/dog4.avif" alt="dog">
+                    <img class="card__img" src="./assets/img/img_cards/dog4.avif" alt="dog">
                     <div class="card__info">
                         <h2 class="card__info--title">JUANA</h2>
                         <p class="card__info--p">Aventurera</p>
                         <div class="card__btn">
-                            <button class="btn">Adoptar</button>
-                            <button class="btn__secondary">Ver más info</button>
+                            <button class="btn btn--card">ADOPTAR</button>
+                            <button class="btn__secondary btn--card">Ver más info</button>
                         </div>
                     </div>
                 </div>
                 <!-- ==================== CARD #5 ==================== -->
                 <div class="card">
-                    <img class="card__img" src="./assets/images/dog5.avif" alt="dog">
+                    <img class="card__img" src="./assets/img/img_cards/dog5.avif" alt="dog">
                     <div class="card__info">
                         <h2 class="card__info--title">ROCO</h2>
                         <p class="card__info--p">Aventurero</p>
                         <div class="card__btn">
-                            <button class="btn">Adoptar</button>
-                            <button class="btn__secondary">Ver más info</button>
+                            <button class="btn btn--card">ADOPTAR</button>
+                            <button class="btn__secondary btn--card">Ver más info</button>
                         </div>
                     </div>
                 </div>
                 <!-- ==================== CARD #6 ==================== -->
                 <div class="card">
-                    <img class="card__img" src="./assets/images/dog6.avif" alt="dog">
+                    <img class="card__img" src="./assets/img/img_cards/dog6.avif" alt="dog">
                     <div class="card__info">
                         <h2 class="card__info--title">MARCIA</h2>
                         <p class="card__info--p">Juguetona</p>
                         <div class="card__btn">
-                            <button class="btn">Adoptar</button>
-                            <button class="btn__secondary">Ver más info</button>
+                            <button class="btn btn--card">ADOPTAR</button>
+                            <button class="btn__secondary btn--card">Ver más info</button>
                         </div>
                     </div>
                 </div>
                 <!-- ==================== CARD #7 ==================== -->
                 <div class="card">
-                    <img class="card__img" src="./assets/images/dog7.avif" alt="dog">
+                    <img class="card__img" src="./assets/img/img_cards/dog7.avif" alt="dog">
                     <div class="card__info">
                         <h2 class="card__info--title">MIA</h2>
                         <p class="card__info--p">Aventurera</p>
                         <div class="card__btn">
-                            <button class="btn">Adoptar</button>
-                            <button class="btn__secondary">Ver más info</button>
+                            <button class="btn btn--card">ADOPTAR</button>
+                            <button class="btn__secondary btn--card">Ver más info</button>
                         </div>
                     </div>
                 </div>
                 <!-- ==================== CARD #8 ==================== -->
                 <div class="card">
-                    <img class="card__img" src="./assets/images/dog8.avif" alt="dog">
+                    <img class="card__img" src="./assets/img/img_cards/dog8.avif" alt="dog">
                     <div class="card__info">
                         <h2 class="card__info--title">LILY</h2>
                         <p class="card__info--p">Independiente</p>
                         <div class="card__btn">
-                            <button class="btn">Adoptar</button>
-                            <button class="btn__secondary">Ver más info</button>
+                            <button class="btn btn--card">ADOPTAR</button>
+                            <button class="btn__secondary btn--card">Ver más info</button>
                         </div>
                     </div>
                 </div>
@@ -252,7 +265,7 @@
                         </div>
                         <div class="info__ubic" >
                             <i class="fa-solid fa-location-dot"></i>
-                            <p>EEUU calle falsa 123</p>
+                            <p>ARG Calle falsa 123</p>
                         </div>
                     </div>
                     <div class="contact__redes">
@@ -291,7 +304,7 @@
         </section>
     </main>
     <footer>
-        <img class="footer__logo" src="./assets/images/Kyra_logo.png" alt="logo">
+        <img class="footer__logo" src="./assets/img/logo.png" alt="logo">
         <p>Todos los derechos reservados 2023</p>
     </footer>
 </body>

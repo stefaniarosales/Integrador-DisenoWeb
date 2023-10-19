@@ -1,0 +1,25 @@
+/* ==================== TABLET ==================== */
+@media (min-width: 610px) {
+    #about h1 {
+        font-size: var(--font-xl);
+    }
+    .about__container {
+        width: 100%;
+        justify-content: center;
+        
+    }
+    .about__container--caja {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .about__info {
+        width: 100%;
+    }
+    .about__info--img {
+        width: 50%;
+    }
+    .reverse {
+        flex-direction: row-reverse;
+}
+}

@@ -177,16 +177,16 @@ span {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 2rem;
 }
 /* ==================== SECTION HERO ==================== */
+
 .hero__img {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     object-fit: cover;
+    object-position: 50% 50%;
     padding-top: 80px;
-    
 }
 .hero__info {
     display: flex;
@@ -218,11 +218,12 @@ button {
     background: var(--background-secondary);
 }
 .about__container {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     padding: 1rem;
 }
 #about h1 {
@@ -233,16 +234,13 @@ button {
 }
 /* ==================== ABOUT-INFO 1 al 6 ==================== */
 .about__info {
-    width: 300px;
-    height:  300px;
-    /* background: rgb(255,250,235); */
-    border-radius: 25px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-bottom: 10px;
 }
 .info__title {
-    padding: 0.5rem;
+    padding: 0.9rem;
     font-size: var(--font-s);
     font-weight: var(--font-mediun);
     text-align: center;
@@ -258,9 +256,9 @@ button {
     width:100%;
     text-align: center;
 }
+
 .about__info--img {
-    width: 300px;
-    height: 250px;
+    width: 100%;
     object-fit: cover;
 } 
 
@@ -279,7 +277,6 @@ button {
     text-align: center;
     gap: 20px;
     padding: 10px;
-    background: var(--background);
 }
 .cards__info--title {
     font-size: var(--font-l);
@@ -331,9 +328,14 @@ button {
     color: var(--text-p);
 }
 .card__btn {
+    width: auto;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+.btn--card {
+    width: 260px;
+    padding: 10px;
 }
 
 /* ==================== SECTION CONTACT ==================== */
@@ -385,6 +387,7 @@ button {
     flex-direction: column;
     gap: 8px;
     font-size: 18px;
+    color: var(--background);
 }
 
 /* form */
@@ -420,7 +423,7 @@ label {
 
 /* ==================== FOOTER ==================== */
 footer {
-    background: var(--background);
+    background: var(--background-secondary);
     text-align: center;
 }
 .footer__logo {
