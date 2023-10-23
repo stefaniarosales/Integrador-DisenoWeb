@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <link rel="stylesheet" href="../css/reguistrar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Reguistro</title>
+</head>
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header class="header">
+        <img class="header__logo" src="../assets/img/logo.png" alt="logo">
+        <div class="header__nav">
+            <nav class="navbar">
+                <label for="toggle__menu"><i class="fa-solid fa-bars" id="menu"></i></label>
+                <input type="checkbox" id="toggle__menu">
+                <ul class="navbar__menu">
+                    <label for="toggle__menu"><i class="fa-solid fa-x" id="closemenu"></i></label>
+                    <li class="navbar__items"><a class="navbar__links" href="#">INICIO</a></li>
+                    <li class="navbar__items" ><a class="navbar__links" href="#">APRENDE</a></li>
+                    <li class="navbar__items" ><a class="navbar__links" href="#">ADOPTA</a></li>
+                    <li class="navbar__items" ><a class="navbar__links" href="#">CONTÁCTANOS</a></li>
+                    <div class="navbar__btns">
+                        <a class="btn__secondary" href="#">INGRESAR</a>
+                        <a class="btn navbar__btn--active" href="#">REGÍSTRATE</a>
+                    </div>
+                </ul>
+            </nav>
+            <!-- navbar desktop -->
+            <nav class="navbar__menuDesktop">
+                <ul class="navbar__listDesktop">
+                    <li><a class="navbar__linkDesktop" href="#hero">INICIO</a></li>
+                    <li><a class="navbar__linkDesktop" href="#about">APRENDE</a></li>
+                    <li><a class="navbar__linkDesktop" href="#cards">ADOPTA</a></li>
+                    <li><a class="navbar__linkDesktop" href="#contact">CONTÁCTANOS</a></li>
+                </ul>
+                <div class="navbar__btnsDesktop">
+                    <a class="btn__secondary" href="#">INGRESAR</a>
+                    <a class="btn navbar__btn--active" href="#">REGÍSTRATE</a>
+                </div>
+            </nav>
+            <!-- navbar desktop -->
+        </div>
+    </header>
+    <main>
+        <h1>Crear cuenta</h1>
+        <form action="#">
+            <fieldset>
+                <label for="name__reguistro">Nombre:</label>
+                <input type="text" id="name__reguistro">
+
+            </fieldset>
+        </form>
+    </main>
+    <!-- <footer>
+        <img class="footer__logo" src="../assets/img/logo.png" alt="logo">
+        <div class="footer__redes">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <p>Todos los derechos reservados 2023</p>
+    </footer -->
+</body>
+</html>

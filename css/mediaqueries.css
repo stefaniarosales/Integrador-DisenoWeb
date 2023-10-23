@@ -120,7 +120,7 @@
         display: flex;
         gap: 10px;
     }
-    form {
+    .form__index {
         width: 100%;
     }
     .contact__map {
@@ -201,7 +201,6 @@
     .info__title {
         font-size: var(--font-m);
     }
-
     /* contact */
     
 
