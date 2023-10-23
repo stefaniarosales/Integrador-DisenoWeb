@@ -29,11 +29,13 @@
     --font-semibold: 600;
     --font-bold: 700;
 
-    --font-xs: 10px;
+    --font-xs: 12px;
     --font-s: 16px;
     --font-m: 24px;
     --font-l: 32px;
     --font-xl: 40px;
+    --font-xxl: 45px;
+    
 
 }
 /* ==================== REUTILIZABLES ==================== */
@@ -48,6 +50,10 @@
     font-size: var(--font-sm);
     color: var(--text-white);
     letter-spacing: 1.5px;
+    cursor: pointer;
+}
+.btn:hover {
+    color: rgb(134, 131, 131);
 }
 .btn__secondary {
     outline: 1px solid var(--btn-secondary);
@@ -59,6 +65,12 @@
     font-size: var(--font-sm);
     color: var(--text-bg);
     letter-spacing: 1px;
+    cursor: pointer;
+}
+.btn__secondary:hover {
+    color: rgb(134, 131, 131); 
+    outline: 1px solid rgb(134, 131, 131) ;
+    border-radius: 35px;
 }
 span {
     background: rgb(70,23,2);
@@ -93,6 +105,11 @@ span {
 .navbar {
     display: flex;
 }
+/* ocultamos menuDesktop */
+.navbar__menuDesktop {
+    display: none;
+}
+/* ocultamos menuDesktop */
 
 .navbar__menu {
     padding-top: 1.45rem;
@@ -180,14 +197,16 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 5rem;
 }
 /* ==================== SECTION HERO ==================== */
-
+#hero {
+    width: 100%;
+    max-width: 1200px;
+}
 .hero__img {
     width: 100%;
     object-fit: cover;
-    object-position: 50% 50%;
     padding-top: 80px;
 }
 .hero__info {
@@ -197,10 +216,11 @@ main {
     align-items: center;
     gap: 20px;
     padding: 10px;
+    text-align: center;
 }
 .hero__h1 {
     padding-top: 20px;
-    font-size: var(--font-l);
+    font-size: var(--font-xl);
     font-weight: var(--font-bold);
     text-align: center;
 }
@@ -298,7 +318,7 @@ button {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
 }
 .card {
     display: flex;
@@ -354,6 +374,7 @@ button {
     gap: 10px;
     padding: 10px;
     max-width: 1200px;
+    gap: 50px;
 }
 .contact__title {
     font-size: var(--font-l);
@@ -373,29 +394,30 @@ button {
     gap: 20px;
 }
 .contact__info--container {
+    display: flex;
+}
+.contact__info {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     gap: 10px;
 }
-.info__telef {
-    display: flex;
-    gap: 10px;
-}
-.info__mail {
-    display: flex;
-    gap: 10px;
-}
-.info__ubic {
-    display: flex;
-    gap: 10px;
-}
-.contact__redes {
+.info__telef,
+.info__mail,
+.info__ubic{
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    font-size: 18px;
-    color: var(--background);
+    align-items: center;
+    gap: 30px;
+}
+.info__telef,
+.info__mail,
+.info__ubic p {
+    font-size: var(--font-xs);
+}
+.fa-solid {
+    color: var(--btn-bg);
+    font-size: var(--font-m);
 }
 
 /* form */
@@ -436,12 +458,22 @@ iframe {
 footer {
     background: var(--background-secondary);
     text-align: center;
+    padding: 10px;
 }
 .footer__logo {
-    width: 110px;
-    height: 40px;
+    width: 150px;
+    height: 55px;
 }
 footer p {
     font-size: 8px;
     font-weight: var(--font-regular);
+}
+.footer__redes {
+    color: var(--btn-bg);
+    font-size: var(--font-m);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 10px 0;
 }

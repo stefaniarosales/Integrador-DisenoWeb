@@ -20,7 +20,7 @@
                     <label for="toggle__menu"><i class="fa-solid fa-x" id="closemenu"></i></label>
                     <li class="navbar__items"><a class="navbar__links" href="#hero">INICIO</a></li>
                     <li class="navbar__items" ><a class="navbar__links" href="#about">APRENDE</a></li>
-                    <li class="navbar__items" ><a class="navbar__links" href="#cards">ADOPTÁ</a></li>
+                    <li class="navbar__items" ><a class="navbar__links" href="#cards">ADOPTA</a></li>
                     <li class="navbar__items" ><a class="navbar__links" href="#contact">CONTÁCTANOS</a></li>
                     <div class="navbar__btns">
                         <a class="btn__secondary" href="#">INGRESAR</a>
@@ -28,6 +28,20 @@
                     </div>
                 </ul>
             </nav>
+            <!-- navbar desktop -->
+            <nav class="navbar__menuDesktop">
+                <ul class="navbar__listDesktop">
+                    <li><a class="navbar__linkDesktop" href="#hero">INICIO</a></li>
+                    <li><a class="navbar__linkDesktop" href="#about">APRENDE</a></li>
+                    <li><a class="navbar__linkDesktop" href="#cards">ADOPTA</a></li>
+                    <li><a class="navbar__linkDesktop" href="#contact">CONTÁCTANOS</a></li>
+                </ul>
+                <div class="navbar__btnsDesktop">
+                    <a class="btn__secondary" href="#">INGRESAR</a>
+                    <a class="btn navbar__btn--active" href="#">REGÍSTRATE</a>
+                </div>
+            </nav>
+            <!-- navbar desktop -->
         </div>
     </header>
     <!-- ==================== MAIN ==================== -->
@@ -145,7 +159,7 @@
         <section id="cards">
             <!-- ==================== SECTION CARDS INFO ==================== -->
             <div class="cards__info">
-                <h1 class="cards__info--title">En Adopción</h1>
+                <h1 class="cards__info--title">En <span>Adopción</span></h1>
                 <p class="cards__info--p">¡Encuentra el compañero perfecto para ti! </p>
             </div>
             <!-- ==================== CARDS ==================== -->
@@ -257,21 +271,17 @@
                 <div class="contact__info--container">
                     <div class="contact__info">
                         <div class="info__telef">
-                            <i class="fa-solid fa-phone"></i><p>+54 11 12342345</p>
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+54 11 12342345</p>
                         </div>
                         <div class="info__mail">
                             <i class="fa-solid fa-envelope"></i>
                             <p>kyra@gmail.com</p>
                         </div>
-                        <div class="info__ubic" >
+                        <div class="info__ubic">
                             <i class="fa-solid fa-location-dot"></i>
                             <p>ARG Calle falsa 123</p>
                         </div>
-                    </div>
-                    <div class="contact__redes">
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-facebook"></i>
-                        <i class="fa-brands fa-twitter"></i>
                     </div>
                 </div>
                 <div class="contact__formMap">
@@ -305,6 +315,11 @@
     </main>
     <footer>
         <img class="footer__logo" src="./assets/img/logo.png" alt="logo">
+        <div class="footer__redes">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
         <p>Todos los derechos reservados 2023</p>
     </footer>
 </body>

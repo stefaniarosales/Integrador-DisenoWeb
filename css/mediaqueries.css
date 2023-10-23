@@ -54,6 +54,9 @@
     }
 
     /* contact */
+    #contact{
+        gap: 50px;
+    }
     .contact__title {
         font-size: var(--font-xl)
     }
@@ -65,9 +68,21 @@
         width: 100%;
         justify-content: center;
         align-items: center;
+        gap: 40px;
     }
     .contact__info--container {
-        width: 90%;
+        width: 100%;
+    }
+    .contact__info {
+        gap: 30px;
+    }
+    .info__telef,
+    .info__mail,
+    .info__ubic p {
+        font-size: var(--font-s);
+    }
+    .fa-solid {
+        font-size: var(--font-l);
     }
     form {
         width: 100%;
@@ -86,8 +101,9 @@
     }
 }
 
-/* ==================== TABLET 800px ==================== */
+/* ==================== TABLET 900px ==================== */
 @media (min-width: 900px) {
+    /* contact */
     .contact__info--container {
         width:80%;
         display: flex;
@@ -97,24 +113,12 @@
     .info__telef,
     .info__ubic,
     .info__mail {
-        gap: 50px;
+        gap: 40px;
     }
-    .contact__redes {
-        width: 50%;
-        display: block;
-        text-align: center;
-        padding: 5px;
-    }
-    .contact__redes i {
-        padding: 22px;
-        font-size: 35px;
-    }
-
     .contact__formMap {
         width: 100%;
         display: flex;
         gap: 10px;
-        
     }
     form {
         width: 100%;
@@ -127,4 +131,78 @@
         width: 100%;
         height: 80vh;
     }
+}
+
+/* ==================== DESKTOP 1024px ==================== */
+@media (min-width: 1024px) {
+    /* ==================== HEADER ==================== */
+    .header {
+        height: 100px; 
+    }
+    .header__logo {
+        width: 250px;
+        height: 90px;
+        padding-left: 20px;
+    }
+
+    /* ocultamos menu */
+    #menu,
+    #toggle__menu,
+    #closemenu {
+        display: none;
+    }
+    /* ocultamos menu */
+
+    .header__nav {
+        width: 70%;
+    }
+    .navbar__menuDesktop {
+        width: 100%;
+        height: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .navbar__listDesktop {
+        display: flex;
+        gap: 20px; 
+    }
+    .navbar__linkDesktop {
+        font-weight: var(--font-semibold);
+        font-size: var(--font-sm);
+        color: var(--btn-bg);
+        letter-spacing: 2px;
+        cursor: pointer;
+        padding: 8px;
+    }
+
+    /* btn Desktop */
+    .navbar__btnsDesktop {
+        width: 35%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    a:hover {
+        color: rgb(134, 131, 131);
+    }
+
+    /* hero */
+    .hero__img {
+        padding-top: 100px;
+    }
+    span {
+        font-size: var(--font-xxl);
+    }
+
+    /* about */
+    .info__p {
+        font-size: var(--font-m);
+    }
+    .info__title {
+        font-size: var(--font-m);
+    }
+
+    /* contact */
+    
+
 }
