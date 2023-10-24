@@ -7,12 +7,13 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 h1{
     font-size: var(--font-xl);
     color: #644b3c;
+    padding-top: 20px;
 }
 /* form */
 .form__registro {
