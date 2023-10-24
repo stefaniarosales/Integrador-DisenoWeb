@@ -22,3 +22,9 @@
         width: 30%;
     }
 }
+
+@media (min-height: 441px) {
+    main {
+      height: 92vh;
+    }
+  }
