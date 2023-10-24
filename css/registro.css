@@ -9,17 +9,13 @@ main {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background-image: url(../assets/img/hero.jpg);
-    background-position: center;
-    object-fit: cover; */
-}
-img {
-    display: block;
-    width: 100%;
+    padding-bottom: 30px;
 }
 
 h1{
     font-size: var(--font-xl);
+    /* color: var(--background-secondary); */
+    color: #644b3c;
 }
 /* form */
 .form__registro {
@@ -43,7 +39,6 @@ h1{
 label {
     width: 100%;
     padding-bottom: 5px;
-    
 } 
 
 #name__reguistro,
