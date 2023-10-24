@@ -2,6 +2,7 @@
 @media (min-width: 768px) {
     h1 {
         font-size: var(--font-xxl);
+        padding-top: 30px;
     }
     .form__registro {
         width: 80%;
