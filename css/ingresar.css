@@ -1,5 +1,5 @@
-
 main {
+    background: rgb(182, 169, 193);
     width: 100vw;
     height: 90vh;
     padding-top: 80px;
@@ -9,74 +9,52 @@ main {
     justify-content: center;
     padding-bottom: 30px;
 }
-
-h1{
+h1 {
     font-size: var(--font-xl);
     color: #644b3c;
 }
-/* form */
-.form__registro {
+/* form ingresar */
+.form__ingresar {
     width: 90%;
     max-width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-content: center;
-    gap: 10px;
     outline: 1px solid var(--background-secondary);
     border-radius: 20px;
     padding: 10px;
 }
-
-/* form información */
-.form__info {
+fieldset {
     width: 100%;
-    color: rgb(98, 96, 96);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 label {
     width: 100%;
-    padding-bottom: 5px;
-} 
-
-#name__reguistro,
-#lastName__registro,
-#mail__registro,
-#contraseña__registro,
-#confirmarCont__registro {
+    color: rgb(98, 96, 96);
+}
+#password,
+#user {
     width: 100%;
-    height: 35px;
+    height: 45px;
     border-radius: 20px;
     border: 0;
     padding-bottom: 10px;
 }
 
-/* form términos */
-.form__términos {
-    width: 100%;
-    padding: 10px;
-    color: rgb(98, 96, 96);
-}
-legend {
-    font-size: var(--font-xs);
-}
-/* btn registro */
-.btn__registro {
-    padding: 15px;
+/* btn ingresar */
+.btn__ingresar {
+    padding: 12px;
     border: none;
     width: 100%;
     font-size: var(--font-m);
 }
-.form__info2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+
 p {
     padding: 12px;
     color: rgb(98, 96, 96);
-    text-align: center;
 }
 a {
     color: var(--text-bg);

@@ -295,6 +295,7 @@ button {
     gap: 30px;
     width: 100%;
     max-width: 1200px;
+    
 }
 .cards__info {
     display: flex;

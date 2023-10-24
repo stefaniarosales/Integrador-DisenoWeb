@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/mediaqueries.css">
+    <link rel="stylesheet" href="../css/ingresar.css">
+    <link rel="stylesheet" href="../css/mediaqueriesIngresar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Ingresar</title>
 </head>
 <body>
-    
+    <!-- ==================== HEADER ==================== -->
+    <header class="header">
+        <a href="../index.html"><img class="header__logo" src="../assets/img/logo.png" alt="logo"></a>
+        <div class="header__nav">
+            <nav class="navbar">
+                <label for="toggle__menu"><i class="fa-solid fa-bars" id="menu"></i></label>
+                <input type="checkbox" id="toggle__menu">
+                <ul class="navbar__menu">
+                    <label for="toggle__menu"><i class="fa-solid fa-x" id="closemenu"></i></label>
+                    <li class="navbar__items"><a class="navbar__links" href="../index.html#hero">INICIO</a></li>
+                    <li class="navbar__items" ><a class="navbar__links" href="../index.html#about">APRENDE</a></li>
+                    <li class="navbar__items" ><a class="navbar__links" href="../index.html#cards">ADOPTA</a></li>
+                    <li class="navbar__items" ><a class="navbar__links" href="../index.html#contact">CONTÁCTANOS</a></li>
+                    <div class="navbar__btns">
+                        <a class="btn__secondary" href="#">INGRESAR</a>
+                        <a class="btn navbar__btn--active" href="./registro.html">REGÍSTRATE</a>
+                    </div>
+                </ul>
+            </nav>
+            <!-- navbar desktop -->
+            <nav class="navbar__menuDesktop">
+                <ul class="navbar__listDesktop">
+                    <li><a class="navbar__linkDesktop" href="../index.html#hero">INICIO</a></li>
+                    <li><a class="navbar__linkDesktop" href="../index.html#about">APRENDE</a></li>
+                    <li><a class="navbar__linkDesktop" href="../index.html#cards">ADOPTA</a></li>
+                    <li><a class="navbar__linkDesktop" href="../index.html#contact">CONTÁCTANOS</a></li>
+                </ul>
+                <div class="navbar__btnsDesktop">
+                    <a class="btn__secondary" href="#">INGRESAR</a>
+                    <a class="btn navbar__btn--active" href="../html/registro.html">REGÍSTRATE</a>
+                </div>
+            </nav>
+            <!-- navbar desktop -->
+        </div>
+    </header>
+    <main>
+        <h1>Ingresar</h1>
+        <form class="form__ingresar" action="#">
+            <fieldset>
+
+                <label for="user">Usuario:</label>
+                <input type="text" id="user">
+
+                <label for="password">Contraseña:</label>
+                <input type="password" id="password">
+
+                <input class="btn btn__ingresar" type="submit" value="Ingresar">
+            </fieldset>
+            <p>¿No tienes una cuenta?</p>
+            <a href="../html/registro.html">Registrate</a>
+        </form>
+    </main>
+    <footer>
+        <a href="../index.html"><img class="footer__logo" src="../assets/img/logo.png" alt="logo"></a>
+        <div class="footer__redes">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+        <p>Todos los derechos reservados 2023</p>
+    </footer>    
 </body>
+
 </html>
