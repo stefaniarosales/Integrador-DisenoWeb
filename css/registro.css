@@ -1,8 +1,76 @@
 
 main {
+    width: 100%;
+    height: 90vh;
     padding-top: 100px;
     background: #a8a4a1;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(../assets/img/hero.jpg);
+    background-position: center;
+    object-fit: cover; */
 }
-form {
+img {
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-size: var(--font-xl);
+}
+/* form */
+.form__registro {
+    width: 90%;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    outline: 1px solid var(--background-secondary);
+    border-radius: 30px;
 }
+
+/* form información */
+.form__info {
+    width: 100%;
+    color: rgb(98, 96, 96);
+    /* background: rgb(137, 137, 170); */
+}
+label {
+    width: 100%;
+    padding-bottom: 5px;
+    
+} 
+
+#name__reguistro,
+#lastName__registro,
+#mail__registro,
+#contraseña__registro,
+#confirmarCont__registro {
+    width: 100%;
+    height: 35px;
+    border-radius: 20px;
+    border: 0;
+    padding-bottom: 5px;
+}
+
+
+/* form términos */
+.form__términos {
+    width: 100%;
+    padding: 10px;
+    /* text-align: center; */
+}
+
+/* btn registro */
+.btn__registro {
+    padding: 15px;
+    border: none;
+    width: 100%;
+    font-size: var(--font-m);
+}
+

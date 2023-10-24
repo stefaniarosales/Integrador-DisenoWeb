@@ -19,23 +19,23 @@
                 <input type="checkbox" id="toggle__menu">
                 <ul class="navbar__menu">
                     <label for="toggle__menu"><i class="fa-solid fa-x" id="closemenu"></i></label>
-                    <li class="navbar__items"><a class="navbar__links" href="#">INICIO</a></li>
-                    <li class="navbar__items" ><a class="navbar__links" href="">APRENDE</a></li>
-                    <li class="navbar__items" ><a class="navbar__links" href="#">ADOPTA</a></li>
-                    <li class="navbar__items" ><a class="navbar__links" href="#">CONTÁCTANOS</a></li>
+                    <li class="navbar__items"><a class="navbar__links" href="../index.html#hero">INICIO</a></li>
+                    <li class="navbar__items" ><a class="navbar__links" href="../index.html#about">APRENDE</a></li>
+                    <li class="navbar__items" ><a class="navbar__links" href="../index.html#cards">ADOPTA</a></li>
+                    <li class="navbar__items" ><a class="navbar__links" href="../index.html#contact">CONTÁCTANOS</a></li>
                     <div class="navbar__btns">
                         <a class="btn__secondary" href="#">INGRESAR</a>
-                        <a class="btn navbar__btn--active" href="#">REGÍSTRATE</a>
+                        <a class="btn navbar__btn--active" href="./registro.html">REGÍSTRATE</a>
                     </div>
                 </ul>
             </nav>
             <!-- navbar desktop -->
             <nav class="navbar__menuDesktop">
                 <ul class="navbar__listDesktop">
-                    <li><a class="navbar__linkDesktop" href="#hero">INICIO</a></li>
+                    <li><a class="navbar__linkDesktop" href="../index.html#hero">INICIO</a></li>
                     <li><a class="navbar__linkDesktop" href="../index.html#about">APRENDE</a></li>
-                    <li><a class="navbar__linkDesktop" href="#cards">ADOPTA</a></li>
-                    <li><a class="navbar__linkDesktop" href="#contact">CONTÁCTANOS</a></li>
+                    <li><a class="navbar__linkDesktop" href="../index.html#cards">ADOPTA</a></li>
+                    <li><a class="navbar__linkDesktop" href="../index.html#contact">CONTÁCTANOS</a></li>
                 </ul>
                 <div class="navbar__btnsDesktop">
                     <a class="btn__secondary" href="#">INGRESAR</a>
@@ -45,17 +45,40 @@
             <!-- navbar desktop -->
         </div>
     </header>
+    <!-- ==================== MAIN ==================== -->
     <main>
         <h1>Crear cuenta</h1>
-        <form action="#">
-            <fieldset>
-                <label for="name__reguistro">Nombre:</label>
-                <input type="text" id="name__reguistro">
+
+        <form class="form__registro" action="#">
+            <fieldset class="form__info">
+
+                <label for="name__registro">Nombre:</label>
+                <input type="text" id="name__reguistro" placeholder="  Anny">
+
+                <label for="lastName__registro">Apellidos:</label>
+                <input type="text" id="lastName__registro" placeholder="  Gaiz">
+
+                <label for="mail__registro">Correo:</label>
+                <input type="text" id="mail__registro" placeholder="  annygaez@gmail.com">
+
+                <label for="contraseña__registro">Contraseña:</label>
+                <input type="password" id="contraseña__registro">
+
+                <label for="confirmarCont__registro">Confirmar Contraseña:</label>
+                <input type="password" id="confirmarCont__registro">
+
+            </fieldset>
+
+            <fieldset class="form__términos">
+
+                <legend> <input type="radio" id="si"> Acepto términos y condiciones</legend>
+                
+                <input class="btn btn__registro" type="submit" value="Registrarse"
 
             </fieldset>
         </form>
     </main>
-    <!-- <footer>
+    <footer>
         <img class="footer__logo" src="../assets/img/logo.png" alt="logo">
         <div class="footer__redes">
             <i class="fa-brands fa-instagram"></i>
@@ -63,6 +86,6 @@
             <i class="fa-brands fa-twitter"></i>
         </div>
         <p>Todos los derechos reservados 2023</p>
-    </footer -->
+    </footer
 </body>
 </html>
