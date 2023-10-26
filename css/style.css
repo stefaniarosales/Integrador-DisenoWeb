@@ -471,7 +471,7 @@ footer p {
     font-weight: var(--font-regular);
 }
 .footer__redes {
-    color: var(--btn-bg);
+    color: #644b3c;
     font-size: var(--font-m);
     display: flex;
     justify-content: center;
