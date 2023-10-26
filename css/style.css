@@ -436,14 +436,6 @@ button {
     padding: 10px;
     border-radius: 20px;
 }
-
-#last-name,
-#name,
-#email,
-#message {
-    
-}
-
 Fieldset {
     border: none;
 }
