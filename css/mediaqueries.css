@@ -1,5 +1,20 @@
+/* ==================== MENU 500px==================== */
+@media (min-width: 540px) {
+    /* menu */
+    .navbar__links {
+        font-size: var(--font-m);
+    }
+    .navbar__items {
+        width: 250px;
+    }
+    .btn__menu {
+        width: 250px;
+        font-size: var(--font-m);
+    }
+}
 /* ==================== TABLET 768px==================== */
 @media (min-width: 768px) {
+    
     /* hero */
     .hero__h1 {
         font-size: var(--font-xl);
