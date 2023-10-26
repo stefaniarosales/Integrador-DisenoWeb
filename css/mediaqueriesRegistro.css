@@ -5,14 +5,14 @@
         padding-top: 30px;
     }
     .form__registro {
-        width: 80%;
+        width: 50%;
         padding: 20px;
     }
 }
 /* ==================== TABLET 900px==================== */
 @media (min-width: 900px) {
     .form__registro {
-        width: 70%;
+        width: 40%;
     }
 }
 
@@ -23,8 +23,9 @@
     }
 }
 
+/* ==================== HEIGHT 941px ==================== */
 @media (min-height: 941px) {
     main {
-      height: 92vh;
+    height: 92vh;
     }
-  }
+}
