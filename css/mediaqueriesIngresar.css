@@ -1,3 +1,10 @@
+/* ==================== BTN INGRESAR 540px==================== */
+@media (min-width: 540px) {
+    .btn__ingresar {
+        width: 250px;
+        font-size: var(--font-m);
+    }
+}
 /* ==================== TABLET 768px==================== */
 @media (min-width: 768px) {
     h1 {
@@ -7,14 +14,12 @@
         width: 50%;
     }
 }
-
 /* ==================== TABLET 900px==================== */
 @media (min-width: 900px) {
     .form__ingresar {
         width: 40%;
     }
 }
-
 /* ==================== DESKTOP 1024px ==================== */
 @media (min-width: 1024px) {
     .form__ingresar {

@@ -1,3 +1,10 @@
+/* ==================== BTN REGISTRO 540px==================== */
+@media (min-width: 540px) {
+    .btn__registro {
+        width: 250px;
+        font-size: var(--font-m);
+    }
+}
 /* ==================== TABLET 768px==================== */
 @media (min-width: 768px) {
     h1 {

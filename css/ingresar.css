@@ -39,7 +39,7 @@ label {
 #password,
 #user {
     width: 100%;
-    height: 45px;
+    height: 30px;
     border-radius: 30px;
     border: 0;
     padding: 10px 0;
@@ -62,12 +62,18 @@ label {
 }
 
 /* btn ingresar */
+.btn__ingresarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+}
 .btn__ingresar {
-    padding: 12px;
+    padding: 8px;
     border: none;
     border-radius: 35px;
-    width: 100%;
-    font-size: var(--font-m);
+    width: 170px;
+    font-size: var(--font-s);
 }
 
 p {

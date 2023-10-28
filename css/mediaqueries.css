@@ -1,4 +1,4 @@
-/* ==================== MENU 500px==================== */
+/* ==================== MENU 540px==================== */
 @media (min-width: 540px) {
     /* menu */
     .navbar__links {
@@ -152,11 +152,12 @@
 @media (min-width: 1024px) {
     /* ==================== HEADER ==================== */
     .header {
-        height: 100px; 
+        height: 100px;
+        justify-content: space-around;
     }
     .header__logo {
-        width: 250px;
-        height: 90px;
+        width: 190px;
+        height: 70px;
         padding-left: 20px;
     }
 
