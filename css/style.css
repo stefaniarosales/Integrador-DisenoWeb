@@ -160,13 +160,12 @@ span {
     justify-content: flex-end;
 }
 #menu {
-    font-size: var(--font-md);
+    font-size: var(--font-m);
     color: rgb(98, 96, 96);
 }
 #closemenu{
-    padding: 10px;
     color: rgb(98, 96, 96);
-    font-size: var(--font-md);
+    font-size: var(--font-m);
     width: 35px;
     align-self: flex-end;
 }
