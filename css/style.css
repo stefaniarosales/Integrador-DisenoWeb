@@ -229,7 +229,7 @@ main {
     text-align: center;
     color: var(--text-p);
 }
-/* ?????????????' */
+/*eliminar borde que trae el btn */
 button {
     all: unset;
 }

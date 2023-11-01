@@ -23,6 +23,6 @@
 /* ==================== DESKTOP 1024px ==================== */
 @media (min-width: 1024px) {
     .form__ingresar {
-        width: 30%;
+        width: 25%;
     }
 }
