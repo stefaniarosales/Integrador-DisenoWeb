@@ -3,7 +3,7 @@
 **Kyra** es una página web diseñada con un enfoque limpio y estéticamente agradable. Utiliza una paleta de colores reducida y tipografías sencillas para ofrecer una experiencia visual armoniosa. Durante el desarrollo, se exploraron diversas técnicas de diseño responsivo, como media queries y flexbox, para garantizar una adaptación óptima en distintos dispositivos.
 
 ## 🖼️ Capturas de pantalla  
-![Vista móvil](readme/mobile.png)  
+<img src="https://github.com/stefaniarosales/Integrador-DisenoWeb/blob/main/assets/img/mobile.png" alt="Vista móvil" width="61">   <img src="https://github.com/stefaniarosales/Integrador-DisenoWeb/blob/main/assets/img/web.png" alt="Vista móvil" width="227">
 
 ## 🚀 Características  
 ✅ Diseño limpio y minimalista 🎨  
